@@ -35,7 +35,7 @@ function ScriptsLoader(dependencyForest, callback) {
                 innerCallback();
             };
             processed++;
-            if (processed == toBeProcessed) {
+            if ((typeof(callback) == 'function') && (processed == toBeProcessed)) {
                 callback(scriptsLoaded);
             }
         }
