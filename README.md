@@ -26,3 +26,9 @@ Pure JavaScript scripts loader with dependencies and uniqueness check
       console.log('Done. The following scripts were loaded:');
       console.log(Object.keys(scriptsLoaded).join('\n'));
     });
+
+## Features
+### Loads the scripts according the dependencies so the chidren will be loaded only after the father was loaded.
+### Doesn't load scripts with the same path. In this case it will load directly its children.
+### A callback can be provided to be called when all the scripts are loaded.
+### The callback will recieve a hash with the src's as its keys (and true as a value).
