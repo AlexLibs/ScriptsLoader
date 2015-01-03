@@ -16,7 +16,7 @@ function ScriptsLoader(dependencyForest, callback) {
         script.onload = script.onreadystatechange = function() {
             if (!done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete")) {
                 done = true;
-                console.log('Loaded - ' + src);
+                // console.log('Loaded - ' + src);
 
                 // Handle memory leak in IE
                 script.onload = script.onreadystatechange = null;
