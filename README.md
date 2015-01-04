@@ -32,3 +32,7 @@ Pure JavaScript scripts loader with dependencies and uniqueness check
 2. Doesn't load scripts with the same path. In this case it skips a script was loaded and proceeds to its children.
 3. A callback can be provided to be called when all the scripts are loaded.
 4. The callback recieves a hash with the src's as its keys (and true as a value).
+
+## Demo/Playground:
+
+http://jsbin.com/sebaxipuma/2
